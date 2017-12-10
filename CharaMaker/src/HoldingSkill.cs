@@ -18,8 +18,8 @@ namespace CharaMaker
 			source = _source;
 			name = source.name;
 			type = source.category;
-			basePoint = source.point;
-			jobPoint = hobbyPoint = sumPoint = 0;
+			basePoint = sumPoint = source.point;
+			jobPoint = hobbyPoint = 0;
 			if (_handler != null) PropertyChanged += _handler;
 		}
 		

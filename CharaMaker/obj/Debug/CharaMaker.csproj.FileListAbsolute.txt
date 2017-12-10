@@ -12,3 +12,17 @@ c:\users\katsuki\documents\visual studio 2017\Projects\CharaMaker\CharaMaker\obj
 c:\users\katsuki\documents\visual studio 2017\Projects\CharaMaker\CharaMaker\obj\Debug\CharaMaker.exe
 c:\users\katsuki\documents\visual studio 2017\Projects\CharaMaker\CharaMaker\obj\Debug\CharaMaker.pdb
 c:\users\katsuki\documents\visual studio 2017\Projects\CharaMaker\CharaMaker\obj\Debug\CharaMaker.csprojResolveAssemblyReference.cache
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\bin\Debug\CharaMaker.exe.config
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\bin\Debug\CharaMaker.exe
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\bin\Debug\CharaMaker.pdb
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker.csprojResolveAssemblyReference.cache
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\MainWindow.g.cs
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\App.g.cs
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker_MarkupCompile.cache
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker_MarkupCompile.lref
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\MainWindow.baml
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker.g.resources
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker.Properties.Resources.resources
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker.csproj.GenerateResource.Cache
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker.exe
+C:\Users\Katsuki\Desktop\CharaMaker\CharaMaker\obj\Debug\CharaMaker.pdb

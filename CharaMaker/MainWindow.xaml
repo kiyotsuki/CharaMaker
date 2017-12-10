@@ -5,33 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CharaMaker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="777.714" Width="535.857" ResizeMode="NoResize">
     <Grid>
 
-        <Button Name="btnRandomState" Content="Random" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" Margin="10,13,0,0" Click="Button_Click"/>
+        <Button Name="btnRandomState" Content="ランダムアビリティ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Margin="10,13,0,0" Click="Button_Click"/>
 
-        <DataGrid Name="basicStatusGrid" HorizontalAlignment="Left" Height="201" Margin="10,38,0,0" VerticalAlignment="Top" Width="193" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
+        <DataGrid Name="basicStatusGrid" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="60" Header="名称" Binding="{Binding Name}" IsReadOnly="True"/>
-                <DataGridTextColumn Width="34" Header="基礎" Binding="{Binding BasePoint}"/>
-                <DataGridTextColumn Width="34" Header="補正" Binding="{Binding AddPoint}"/>
-                <DataGridTextColumn Width="34" Header="合計" Binding="{Binding SumPoint}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="66" Header="名称" Binding="{Binding Name}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="42" Header="基礎" Binding="{Binding BasePoint}"/>
+                <DataGridTextColumn Width="42" Header="補正" Binding="{Binding AddPoint}"/>
+                <DataGridTextColumn Width="42" Header="合計" Binding="{Binding SumPoint}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
 
-        <DataGrid  Name="advancedStatusGrid" HorizontalAlignment="Left" Height="163" Margin="10,244,0,0" VerticalAlignment="Top" Width="193" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
+        <DataGrid  Name="advancedStatusGrid" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="60" Header="名称" Binding="{Binding Name}" IsReadOnly="True"/>
-                <DataGridTextColumn Width="34" Header="基礎" Binding="{Binding BasePoint}" IsReadOnly="True"/>
-                <DataGridTextColumn Width="34" Header="加算" Binding="{Binding AddPoint}"/>
-                <DataGridTextColumn Width="34" Header="実値" Binding="{Binding SumPoint}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="66" Header="名称" Binding="{Binding Name}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="42" Header="基礎" Binding="{Binding BasePoint}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="42" Header="加算" Binding="{Binding AddPoint}"/>
+                <DataGridTextColumn Width="42" Header="実値" Binding="{Binding SumPoint}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
 
-        <DataGrid Name="holdingSkillGrid" HorizontalAlignment="Left" Height="257" Margin="10,450,0,0" VerticalAlignment="Top" Width="495" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
+        <DataGrid Name="holdingSkillGrid" HorizontalAlignment="Left" Height="257" Margin="10,450,0,0" VerticalAlignment="Top" Width="495" AutoGenerateColumns="False" CanUserAddRows="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="150" Header="スキル名" Binding="{Binding Name}"/>
                 <DataGridTextColumn Width="80" Header="種別" Binding="{Binding Type}"/>
+                <DataGridTextColumn Width="150" Header="スキル名" Binding="{Binding Name}"/>
                 <DataGridTextColumn Width="50" Header="初期値" Binding="{Binding BasePoint}"/>
                 <DataGridTextColumn Width="50" Header="職業値" Binding="{Binding JobPoint}"/>
                 <DataGridTextColumn Width="50" Header="趣味値" Binding="{Binding HobbyPoint}"/>
@@ -44,20 +44,23 @@
         <ComboBox Name="skillBoxB" DisplayMemberPath="Text" HorizontalAlignment="Left" Margin="135,423,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="skillBox_SelectionChanged"/>
         <ComboBox Name="skillBoxC" DisplayMemberPath="Text" HorizontalAlignment="Left" Margin="260,423,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="skillBox_SelectionChanged"/>
         <ComboBox Name="skillBoxD" DisplayMemberPath="Text" HorizontalAlignment="Left" Margin="385,423,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="skillBox_SelectionChanged"/>
-        <ComboBox Name="jobBox" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="223,13,0,0" VerticalAlignment="Top" Width="282" SelectionChanged="jobBox_SelectionChanged"/>
+        <ComboBox Name="jobBox" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="223,12,0,0" VerticalAlignment="Top" Width="282" SelectionChanged="jobBox_SelectionChanged"/>
 
-        <TextBox Name="jobText" HorizontalAlignment="Left" Height="246" Margin="223,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="282" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
+        <TextBox Name="jobText" HorizontalAlignment="Left" Height="264" Margin="223,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="282" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
 
-        <DataGrid Name="skillPointGrid" HorizontalAlignment="Left" Height="89" Margin="223,293,0,0" VerticalAlignment="Top" Width="282" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
+        <DataGrid Name="skillPointGrid" HorizontalAlignment="Left" Margin="223,311,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="70" Header="名称" Binding="{Binding Name}" IsReadOnly="True"/>
-                <DataGridTextColumn Width="46" Header="初期値" Binding="{Binding BasePoint}" IsReadOnly="True"/>
-                <DataGridTextColumn Width="46" Header="追加値" Binding="{Binding AddPoint}"/>
-                <DataGridTextColumn Width="46" Header="利用値" Binding="{Binding UsePoint}" IsReadOnly="True"/>
-                <DataGridTextColumn Width="46" Header="余り" Binding="{Binding RestPoint}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="80" Header="名称" Binding="{Binding Name}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="50" Header="初期値" Binding="{Binding BasePoint}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="50" Header="追加値" Binding="{Binding AddPoint}"/>
+                <DataGridTextColumn Width="50" Header="利用値" Binding="{Binding UsePoint}" IsReadOnly="True"/>
+                <DataGridTextColumn Width="50" Header="余り" Binding="{Binding RestPoint}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        
-        <Button Name="btnRandomSkill" Content="ランダム割り振り" HorizontalAlignment="Left" Margin="223,387,0,0" VerticalAlignment="Top" Width="282" Click="Button_Click"/>
+
+        <Button Name="btnAddHobbySkill" Content="趣味技能を追加" HorizontalAlignment="Left" Margin="223,387,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Button Name="btnAddJobSkill" Content="職業技能を追加" HorizontalAlignment="Left" Margin="375,387,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+
+        <Button Name="btnSaveForText" Content="テキスト出力" HorizontalAlignment="Left" Margin="354,712,0,0" VerticalAlignment="Top" Width="151" Click="Button_Click"/>
     </Grid>
 </Window>
